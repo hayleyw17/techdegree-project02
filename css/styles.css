@@ -1,0 +1,249 @@
+/* --- Base Styles --- */
+
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #675a85;
+}
+
+h3 {
+    
+    font-size: 1.75em;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+ul {
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #36acd0;
+    text-decoration: none;
+} 
+
+/* --- Header Styles --- */
+
+h1 {
+    color: #4a4a4a;
+    font-weight: 700; 
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.main-nav li {
+    display: block;
+    background-color: #fff;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;    
+}
+
+.main-nav a:hover {
+    color: #2472aa;
+}
+
+
+.profile {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    }
+
+
+/* --- Portfolio Styles --- */
+.portfolio-container {
+    margin-bottom: 3em;
+}
+
+.portfolio-container p {
+    text-align: center;
+}
+
+article { 
+    margin-bottom: 50px;
+}
+
+
+
+/* --- Hobbies Styles --- */
+.hobbies {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+/* --- Contact Styles --- */
+
+.contact-section {
+    background-color: #ededed;
+    padding: 10px 0;
+    width: 100%;
+}
+
+
+/* --- Footer Styles --- */
+
+footer span{
+    padding: 15px 0;
+}
+
+.footer-name {
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-link {
+    float: right;
+    text-transform: uppercase;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-nav {
+    display: none;
+}
+
+
+/* --- Float Clearfix --- */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- Media Queries --- */
+
+@media (min-width: 768px) {
+
+.main-nav li {
+    display: inline-block;
+}
+
+.profile img {
+    float: right;
+    width: 50%;
+    padding-right: 2em;
+}
+
+.profile p {
+    float: left;
+    width: 50%;
+    padding: 0 2em;
+    text-align: left;
+    margin: 0;
+}
+
+.portfolio-container {
+    margin: 0 2em;
+}
+.card {
+    float: left;
+    width: 50%;
+    max-height: 480px;
+    margin: 0 auto;
+}
+
+.marketing,
+.travel,
+.gallery {
+    padding-right: 10px;
+}
+
+.search,
+.map,
+.calculator {
+  padding-left: 10px;
+}
+
+.footer-link {
+    display: none;
+}
+
+.footer-nav {
+    display: inline-block;
+    float: right;
+    padding-bottom: 15px;
+    padding-right: 2em;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding-left: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-name { 
+    float: left;
+    padding-left: 2em;
+}
+}
+
+@media (min-width: 1024px) {
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.portfolio-container,
+.profile {
+  max-width: 1100px;
+}
+
+.header-content {
+  display: inline-block;
+  width: 100%;
+  padding: 2em;
+}
+
+h1 {
+  float: left;
+  padding-top: .4em;
+  margin: 0;
+}
+
+.main-nav {
+  float: right;
+}
+
+.card {
+  padding: 10px;
+  max-height: 420px;
+  width: 33.33%;
+}
+
+}
