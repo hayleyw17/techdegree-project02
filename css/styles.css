@@ -180,8 +180,9 @@ footer span{
 }
 
 .portfolio-container {
-    margin: 0 2em;
+    margin: 0 auto;
 }
+
 .card {
     float: left;
     width: 50%;
