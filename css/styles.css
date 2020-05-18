@@ -9,6 +9,8 @@ body {
     background-color: #fff;
     color: #4a4a4a;
     text-align: center;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
 }
 
 p {
@@ -113,10 +115,9 @@ article {
 
 /* --- Contact Styles --- */
 
-.contact-section {
-    background-color: #ededed;
-    padding: 10px 0;
-    width: 100%;
+hr {
+    border-top: 1px solid #cacaca;
+    width: 95%;
 }
 
 
@@ -158,6 +159,7 @@ footer span{
 
 @media (min-width: 768px) {
 
+
 .main-nav li {
     display: inline-block;
     padding: .25em .5em;
@@ -165,16 +167,22 @@ footer span{
     margin-bottom: .5em;
 }
 
+main {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 .profile img {
     float: right;
     width: 50%;
-    padding-right: 2em;
+    padding-right: 1em;
 }
 
 .profile p {
     float: left;
     width: 50%;
-    padding: 0 2em;
+    padding-left: 1em;
+    padding-right: 1.5em;
     text-align: left;
     margin: 0;
 }
@@ -228,8 +236,8 @@ footer span{
 
 @media (min-width: 1024px) {
 
-main {
-    width: 100%;
+body {
+    max-width: 1150px;
     margin: 0 auto;
 }
 
@@ -237,11 +245,6 @@ main {
   display: inline-block;
   width: 100%;
   padding: 2em;
-}
-
-.portfolio-container,
-.profile {
-  max-width: 1100px;
 }
 
 h1 {
@@ -265,10 +268,28 @@ h1 {
     text-align: center;  
 }
 
+main {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.profile img {
+    padding-right: 2em;
+}
+
+.profile p {
+    padding-left: 2em;
+    padding-right: 1.5em;
+}
+
 .card {
   padding: 10px;
   max-height: 420px;
   width: 33.33%;
+}
+
+hr {
+    width: 100%;
 }
 
 }
